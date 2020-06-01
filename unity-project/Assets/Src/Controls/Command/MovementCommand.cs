@@ -27,8 +27,8 @@ namespace Assets.Src.Controls.Command
 
         public void ExecuteMovement()
         {
-            if (Acceleration != Vector3.zero) //Add clamp to prevent tiny adjustments from going through? like a 0.0000005f accelaration
-                RigidBody.velocity = Acceleration;
+            RigidBody.velocity = Acceleration;
+            //if (Acceleration != Vector3.zero)
         }
     }
 
